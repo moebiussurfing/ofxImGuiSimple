@@ -1,0 +1,30 @@
+
+example-demo/bin/example-demoDebug.app/Contents/Frameworks/libfmodex.dylib
+example-demo/bin/example-demoDebug.app/Contents/Info.plist
+example-demo/bin/example-demoDebug.app/Contents/MacOS/example-demoDebug
+example-demo/bin/example-demoDebug.app/Contents/PkgInfo
+example-demo/bin/example-demoDebug.app/Contents/Resources/icon-debug.icns
+example-demo/bin/example-demoDebug.app/Contents/Resources/imgui.ini
+example-demo/example-demo.xcodeproj/project.pbxproj
+example-demo/example-demo.xcodeproj/project.xcworkspace/xcuserdata/eduardfrigola.xcuserdatad/UserInterfaceState.xcuserstate
+example-demo/example-demo.xcodeproj/project.xcworkspace/xcuserdata/manumolina.xcuserdatad/UserInterfaceState.xcuserstate
+example-demo2/bin/example-demo2Debug.app/Contents/Frameworks/libfmodex.dylib
+example-demo2/bin/example-demo2Debug.app/Contents/Info.plist
+example-demo2/bin/example-demo2Debug.app/Contents/MacOS/example-demo2Debug
+example-demo2/bin/example-demo2Debug.app/Contents/PkgInfo
+example-demo2/bin/example-demo2Debug.app/Contents/Resources/icon-debug.icns
+example-demo2/bin/example-demo2Debug.app/Contents/Resources/imgui.ini
+example-demo2/example-demo2.xcodeproj/project.pbxproj
+example-demo2/example-demo2.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+example-demo2/example-demo2.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+example-demo2/example-demo2.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+example-demo2/example-demo2.xcodeproj/project.xcworkspace/xcuserdata/manumolina.xcuserdatad/UserInterfaceState.xcuserstate
+example-demo2/example-demo2.xcodeproj/xcshareddata/xcschemes/example-demo2 Debug.xcscheme
+example-demo2/example-demo2.xcodeproj/xcshareddata/xcschemes/example-demo2 Release.xcscheme
+example-demo2/openFrameworks-Info.plist
+example-demo2/Project.xcconfig
+example-demo/example-demo.xcodeproj/project.pbxproj
+example-demo/.DS_Store
+example-demo/example-demo.xcodeproj/project.pbxproj
+example-demo/example-demo.xcodeproj/project.xcworkspace/xcuserdata/eduardfrigola.xcuserdatad/UserInterfaceState.xcuserstate
+example-demo2/.DS_Store

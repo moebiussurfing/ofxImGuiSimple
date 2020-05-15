@@ -430,6 +430,43 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
+			<key>D1BDE33D78C8BF35D1040AFD</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>imnodes.h</string>
+				<key>path</key>
+				<string>src/imnodes.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>26AE9751C266BE40B92064C1</key>
+			<dict>
+				<key>fileRef</key>
+				<string>60818C693AD30E697AB45DD1</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>60818C693AD30E697AB45DD1</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>imnodes.cpp</string>
+				<key>path</key>
+				<string>src/imnodes.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>6948EE371B920CB800B5AC1A</key>
 			<dict>
 				<key>children</key>
@@ -600,6 +637,7 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
 						<string>../../../addons/ofxImGuiSimple/libs</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui/src</string>
@@ -646,6 +684,7 @@ fi
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
 						<string>src</string>
 						<string>../../../addons/ofxImGuiSimple/libs</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui</string>
@@ -3453,6 +3492,7 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
 						<string>../../../addons/ofxImGuiSimple/libs</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui/src</string>
@@ -3520,6 +3560,7 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
 						<string>../../../addons/ofxImGuiSimple/libs</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui/src</string>
@@ -3551,6 +3592,7 @@ fi
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
+					<string>26AE9751C266BE40B92064C1</string>
 					<string>9A51FA9C30820CAA878F57BC</string>
 					<string>C728C9943450C33700A7E23B</string>
 					<string>7A7527C4317CA7FFB51F8E09</string>
@@ -3658,6 +3700,7 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
 						<string>../../../addons/ofxImGuiSimple/libs</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui/src</string>
@@ -3714,6 +3757,7 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
 						<string>../../../addons/ofxImGuiSimple/libs</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui</string>
 						<string>../../../addons/ofxImGuiSimple/libs/imgui/src</string>
@@ -3757,6 +3801,8 @@ fi
 					<string>E4B69E1D0A3A1BDC003C02F2</string>
 					<string>E4B69E1E0A3A1BDC003C02F2</string>
 					<string>E4B69E1F0A3A1BDC003C02F2</string>
+					<string>60818C693AD30E697AB45DD1</string>
+					<string>D1BDE33D78C8BF35D1040AFD</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
