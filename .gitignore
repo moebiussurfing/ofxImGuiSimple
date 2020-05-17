@@ -28,3 +28,21 @@ example-demo/.DS_Store
 example-demo/example-demo.xcodeproj/project.pbxproj
 example-demo/example-demo.xcodeproj/project.xcworkspace/xcuserdata/eduardfrigola.xcuserdatad/UserInterfaceState.xcuserstate
 example-demo2/.DS_Store
+example-demo1/bin/example-demo1Debug.app/Contents/Frameworks/libfmodex.dylib
+example-demo1/bin/example-demo1Debug.app/Contents/Info.plist
+example-demo1/bin/example-demo1Debug.app/Contents/MacOS/example-demo1Debug
+example-demo1/bin/example-demo1Debug.app/Contents/PkgInfo
+example-demo1/bin/example-demo1Debug.app/Contents/Resources/editor.ini
+example-demo1/bin/example-demo1Debug.app/Contents/Resources/icon-debug.icns
+example-demo1/bin/example-demo1Debug.app/Contents/Resources/imgui.ini
+example-demo1/bin/example-demo1Debug.app/Contents/Resources/imnodes.ini
+example-demo1/example-demo1.xcodeproj/project.pbxproj
+example-demo1/example-demo1.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+example-demo1/example-demo1.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+example-demo1/example-demo1.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+example-demo1/example-demo1.xcodeproj/project.xcworkspace/xcuserdata/manumolina.xcuserdatad/UserInterfaceState.xcuserstate
+example-demo1/example-demo1.xcodeproj/xcshareddata/xcschemes/example-demo1 Debug.xcscheme
+example-demo1/example-demo1.xcodeproj/xcshareddata/xcschemes/example-demo1 Release.xcscheme
+example-demo1/Makefile
+example-demo1/openFrameworks-Info.plist
+example-demo1/Project.xcconfig
