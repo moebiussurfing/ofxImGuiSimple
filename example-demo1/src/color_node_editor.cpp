@@ -697,8 +697,8 @@ public:
 
         const bool open_popup =
             ImGui::IsWindowFocused(ImGuiFocusedFlags_RootAndChildWindows) &&
-        imnodes::IsEditorHovered //&& ImGui::IsKeyPressed(OF_KEY_SHIFT);//
-        && ImGui::IsKeyReleased(SDL_SCANCODE_A);
+        imnodes::IsEditorHovered; //&& ImGui::IsKeyPressed(OF_KEY_SHIFT);//
+        //&& ImGui::IsKeyReleased(OF_KEY_TAB);
 
         imnodes::EndNodeEditor();
         imnodes::PopAttributeFlag();
