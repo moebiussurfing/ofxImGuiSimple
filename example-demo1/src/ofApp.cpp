@@ -7,21 +7,19 @@ void ofApp::setup(){
 
     gui.setup();
 
-        imnodes::Initialize();
+    imnodes::Initialize();
 
 //    imnodes::Initialize();
 //    imnodes::SetNodeGridSpacePos(1, ImVec2(200.0f, 200.0f));
 
-
-    example.load();
+//    example.load();
 //    example.SaveLoadEditor::
 }
 
 //--------------------------------------------------------------
 void ofApp::exit(){
 
-    example.save();
-
+//    example.save();
 
     // elsewhere in the code...
     imnodes::Shutdown();
@@ -38,8 +36,14 @@ void ofApp::draw(){
     gui.begin();
 
 
+//    show2();
+
+//    show3();
 
     example.show();
+
+
+
 
 
 //    example::NodeEditorShow();
@@ -106,63 +110,19 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-if(key=='s')
-{
-    example.doLog();
-    example.save();
-}
-    if(key=='l')
-    {
-        example.load();
-    }
-}
-
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-
+//    if(key=='s')
+//    {
+//        example.doLog();
+//        example.save();
+//    }
+//    if(key=='l')
+//    {
+//        example.load();
+//    }
+//
+//    if(key==OF_KEY_RETURN)
+//    {
+//        example.printLinks();
+//    }
 }
 
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
-}

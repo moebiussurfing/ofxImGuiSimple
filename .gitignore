@@ -46,3 +46,20 @@ example-demo1/example-demo1.xcodeproj/xcshareddata/xcschemes/example-demo1 Relea
 example-demo1/Makefile
 example-demo1/openFrameworks-Info.plist
 example-demo1/Project.xcconfig
+example-demo4/bin/example-demo4Debug.app/Contents/Frameworks/libfmodex.dylib
+example-demo4/bin/example-demo4Debug.app/Contents/Info.plist
+example-demo4/bin/example-demo4Debug.app/Contents/MacOS/example-demo4Debug
+example-demo4/bin/example-demo4Debug.app/Contents/PkgInfo
+example-demo4/bin/example-demo4Debug.app/Contents/Resources/icon-debug.icns
+example-demo4/bin/example-demo4Debug.app/Contents/Resources/imgui.ini
+example-demo4/bin/example-demo4Debug.app/Contents/Resources/NodeEditor.json
+example-demo4/example-demo4.xcodeproj/project.pbxproj
+example-demo4/example-demo4.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+example-demo4/example-demo4.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+example-demo4/example-demo4.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+example-demo4/example-demo4.xcodeproj/project.xcworkspace/xcuserdata/manumolina.xcuserdatad/UserInterfaceState.xcuserstate
+example-demo4/example-demo4.xcodeproj/xcshareddata/xcschemes/example-demo4 Debug.xcscheme
+example-demo4/example-demo4.xcodeproj/xcshareddata/xcschemes/example-demo4 Release.xcscheme
+example-demo4/openFrameworks-Info.plist
+example-demo4/Project.xcconfig
+example-demo2/example-demo2.xcodeproj/xcuserdata/manumolina.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist

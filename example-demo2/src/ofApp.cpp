@@ -6,8 +6,6 @@ void ofApp::setup(){
     ofSetFrameRate(25);
 
     gui.setup();
-
-
 }
 
 //--------------------------------------------------------------
@@ -25,10 +23,36 @@ void ofApp::draw(){
     gui.begin();
 
 
+    draw2();
+
+
+//    if (ImGui::DockBuilderGetNode(ImGui::GetID("MyDockspace")) == NULL)
+//    {
+//        ImGuiID dockspace_id = ImGui::GetID("MyDockspace");
+//        ImGuiViewport* viewport = ImGui::GetMainViewport();
+//        ImGui::DockBuilderRemoveNode(dockspace_id); // Clear out existing layout
+//        ImGui::DockBuilderAddNode(dockspace_id, ImGuiDockNodeFlags_None); // Add empty node
+//
+//        ImGuiID dock_main_id = dockspace_id; // This variable will track the document node, however we are not using it here as we aren't docking anything into it.
+//        ImGuiID dock_id_left = ImGui::DockBuilderSplitNode(dock_main_id, ImGuiDir_Left, 0.20f, NULL, &dock_main_id);
+//        ImGuiID dock_id_right = ImGui::DockBuilderSplitNode(dock_main_id, ImGuiDir_Right, 0.20f, NULL, &dock_main_id);
+//        ImGuiID dock_id_bottom = ImGui::DockBuilderSplitNode(dock_main_id, ImGuiDir_Down, 0.20f, NULL, &dock_main_id);
+//
+//        ImGui::DockBuilderDockWindow("James_1", dock_id_left);
+//        ImGui::DockBuilderDockWindow("James_2", dock_main_id);
+//        ImGui::DockBuilderDockWindow("James_3", dock_id_right);
+//        ImGui::DockBuilderDockWindow("James_4", dock_id_bottom);
+//        ImGui::DockBuilderFinish(dockspace_id);
+//    }
+
+//    ImGui::ShowUserGuide();
+
 //    ImGui::ShowDemoWindow();
 
+//    ImGui::ShowViewportThumbnails();
 
-    drawBasic();
+
+//    drawBasic();
 
 
 
@@ -37,7 +61,10 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+if (key==' ')
+{
 
+}
 }
 
 //--------------------------------------------------------------

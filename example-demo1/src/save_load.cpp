@@ -70,8 +70,8 @@ public:
             }
             ImGui::Spacing();
             {
-                imnodes::BeginOutputAttribute(make_id(elem.first, 1));
-                const float label_width = ImGui::CalcTextSize("output").x;
+                imnodes::BeginOutputAttribute(make_id(elem.first, 11));
+                const float label_width = ImGui::CalcTextSize("output1").x;
                 ImGui::Indent(node_width - label_width - 1.5f);
                 ImGui::Text("output");
                 imnodes::EndAttribute();
@@ -80,7 +80,7 @@ public:
             //+
             ImGui::Spacing();
             {
-                imnodes::BeginOutputAttribute(make_id(elem.first, 11));
+                imnodes::BeginOutputAttribute(make_id(elem.first, 12));
                 const float label_width = ImGui::CalcTextSize("output2").x;
                 ImGui::Indent(node_width - label_width - 1.5f);
                 ImGui::Text("output2");
@@ -90,7 +90,7 @@ public:
             //+
             ImGui::Spacing();
             {
-                imnodes::BeginOutputAttribute(make_id(elem.first, 111));
+                imnodes::BeginOutputAttribute(make_id(elem.first, 13));
                 const float label_width = ImGui::CalcTextSize("output3").x;
                 ImGui::Indent(node_width - label_width - 1.5f);
                 ImGui::Text("output3");
@@ -118,13 +118,13 @@ public:
             ImGui::TextUnformatted("float");
             imnodes::EndNodeTitleBar();
 
-            imnodes::BeginInputAttribute(make_id(elem.first, 0));
+            imnodes::BeginInputAttribute(make_id(elem.first, 20));
             ImGui::Text("input");
             imnodes::EndAttribute();
             ImGui::Spacing();
 
             {
-                imnodes::BeginOutputAttribute(make_id(elem.first, 1));
+                imnodes::BeginOutputAttribute(make_id(elem.first, 21));
                 const float label_width = ImGui::CalcTextSize("color").x;
                 ImGui::PushItemWidth(node_width - label_width - 6.0f);
                 ImGui::ColorEdit3("color", elem.second.data);
@@ -133,7 +133,7 @@ public:
             }
             ImGui::Spacing();
             {
-                imnodes::BeginOutputAttribute(make_id(elem.first, 2));
+                imnodes::BeginOutputAttribute(make_id(elem.first, 22));
                 const float label_width = ImGui::CalcTextSize("output").x;
                 ImGui::Indent(node_width - label_width - 1.5f);
                 ImGui::Text("output");
@@ -251,7 +251,18 @@ public:
             std::cout << s << '\n';
         }
     }
-
+    void printLinks()
+    {
+        {
+            for (const auto& link : links_)
+            {
+                cout << "[link]\n";
+                cout << "id=" << link.first << "\n";
+                cout << "data=" << link.second.start << "," << link.second.end
+                << "\n\n";
+            }
+        }
+    }
     void save()
     {
         {
@@ -384,4 +395,9 @@ void NodeEditorInitialize() { editor.load(); }
 void NodeEditorShow() { editor.show(); }
 
 void NodeEditorShutdown() { editor.save(); }
+
+    void PrintLinks() {
+        editor.printLinks();
+
+    }
 } // namespace example
