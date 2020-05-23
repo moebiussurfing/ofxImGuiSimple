@@ -35,42 +35,72 @@ void ofApp::draw(){
 
     ImGui::Begin("node editor");
 
-    const int hardcoded_node_id = 11;
 
     imnodes::BeginNodeEditor();
     //---------------
 
 
+    const int hardcoded_node_id = 100;
     imnodes::BeginNode(hardcoded_node_id);
 
     imnodes::BeginNodeTitleBar();
     ImGui::TextUnformatted("output node");
     imnodes::EndNodeTitleBar();
 
-    const int output_attr_id = 22;
-    imnodes::BeginOutputAttribute(output_attr_id);
-    // in between Begin|EndAttribute calls, you can call ImGui
-    // UI functions
-    ImGui::Text("output pin");
+    imnodes::BeginInputAttribute(101);
+    ImGui::Text("input101");
+    imnodes::EndAttribute();
+
+    imnodes::BeginInputAttribute(102);
+    ImGui::Text("input102");
+    imnodes::EndAttribute();
+
+    imnodes::BeginOutputAttribute(111);
+    ImGui::Indent(40);
+    ImGui::Text("output111");
+    imnodes::EndAttribute();
+
+    imnodes::BeginOutputAttribute(112);
+    ImGui::Indent(40);
+    ImGui::Text("output112");
     imnodes::EndAttribute();
 
     imnodes::EndNode();
 
 
 
-    imnodes::BeginNode(1);
+    imnodes::BeginNode(200);
 
     imnodes::BeginNodeTitleBar();
     ImGui::TextUnformatted("simple node :)");
     imnodes::EndNodeTitleBar();
 
-    imnodes::BeginInputAttribute(2);
-    ImGui::Text("input");
+    imnodes::BeginInputAttribute(201);
+    ImGui::Text("input201");
     imnodes::EndAttribute();
 
-    imnodes::BeginOutputAttribute(3);
+    imnodes::BeginInputAttribute(202);
+    ImGui::Text("input202");
+    imnodes::EndAttribute();
+
+    imnodes::BeginOutputAttribute(211);
     ImGui::Indent(40);
-    ImGui::Text("output");
+    ImGui::Text("output211");
+    imnodes::EndAttribute();
+
+    imnodes::BeginOutputAttribute(212);
+    ImGui::Indent(40);
+    ImGui::Text("output212");
+    imnodes::EndAttribute();
+
+    imnodes::BeginOutputAttribute(213);
+    ImGui::Indent(40);
+    ImGui::Text("output213");
+    imnodes::EndAttribute();
+
+    imnodes::BeginOutputAttribute(214);
+    ImGui::Indent(40);
+    ImGui::Text("output214");
     imnodes::EndAttribute();
 
     imnodes::EndNode();
@@ -83,7 +113,7 @@ void ofApp::draw(){
 
     //-------------
 
-    show();
+//    show();
 
 
     
