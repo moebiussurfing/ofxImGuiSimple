@@ -27,7 +27,6 @@ public:
 
     }
 
-
     void ImGuiEx_BeginColumn()
     {
         ImGui::BeginGroup();

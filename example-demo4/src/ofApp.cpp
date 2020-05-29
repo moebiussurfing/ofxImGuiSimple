@@ -245,7 +245,7 @@ void ofApp::draw(){
     {
         auto& io = ImGui::GetIO();
 
-        ImGui::Text("FPS: %.2f (%.2gms)", io.Framerate, io.Framerate ? 1000.0f / io.Framerate : 0.0f);
+//        ImGui::Text("FPS: %.2f (%.2gms)", io.Framerate, io.Framerate ? 1000.0f / io.Framerate : 0.0f);
 
         ImGui::Separator();
 
@@ -266,41 +266,97 @@ void ofApp::draw(){
         ed::PinId  nodeA_OutputPinId = uniqueId++;
 
         if (g_FirstFrame)
-            ed::SetNodePosition(nodeA_Id, ImVec2(10, 10));
+            ed::SetNodePosition(nodeA_Id, ImVec2(10, 0));
+
         ed::BeginNode(nodeA_Id);
         ImGui::Text("Node A");
-        ed::BeginPin(nodeA_InputPinId, ed::PinKind::Input);
-        ImGui::Text("-> In");
+
+        ImGuiEx_BeginColumn();
+
+//        ed::BeginPin(nodeA_InputPinId, ed::PinKind::Input);
+//        ImGui::Text("-> In");
+//        ed::EndPin();
+//
+//        ImGui::SameLine();
+//
+//        ed::BeginPin(nodeA_OutputPinId, ed::PinKind::Output);
+//        ImGui::Text("Out ->");
+//        ed::EndPin();
+
+
+        ImGuiEx_NextColumn();
+
+        ed::PinId  nodeA_OutputPinId1 = uniqueId++;
+        ed::PinId  nodeA_OutputPinId2 = uniqueId++;
+        ed::PinId  nodeA_OutputPinId3 = uniqueId++;
+        ed::PinId  nodeA_OutputPinId4 = uniqueId++;
+
+        ed::BeginPin(nodeA_OutputPinId1, ed::PinKind::Output);
+        ImGui::Text("Out1 ->");
         ed::EndPin();
-        ImGui::SameLine();
-        ed::BeginPin(nodeA_OutputPinId, ed::PinKind::Output);
-        ImGui::Text("Out ->");
+
+        ed::BeginPin(nodeA_OutputPinId2, ed::PinKind::Output);
+        ImGui::Text("Out2 ->");
         ed::EndPin();
+
+        ed::BeginPin(nodeA_OutputPinId3, ed::PinKind::Output);
+        ImGui::Text("Out3 ->");
+        ed::EndPin();
+
+        ed::BeginPin(nodeA_OutputPinId4, ed::PinKind::Output);
+        ImGui::Text("Out4 ->");
+        ed::EndPin();
+
+
+        ImGuiEx_EndColumn();
+
         ed::EndNode();
+
+        //--
 
         // Submit Node B
         ed::NodeId nodeB_Id = uniqueId++;
         ed::PinId  nodeB_InputPinId1 = uniqueId++;
         ed::PinId  nodeB_InputPinId2 = uniqueId++;
+        ed::PinId  nodeB_InputPinId3 = uniqueId++;
+        ed::PinId  nodeB_InputPinId4 = uniqueId++;
         ed::PinId  nodeB_OutputPinId = uniqueId++;
 
         if (g_FirstFrame)
-            ed::SetNodePosition(nodeB_Id, ImVec2(210, 60));
+            ed::SetNodePosition(nodeB_Id, ImVec2(210, 0));
+
         ed::BeginNode(nodeB_Id);
         ImGui::Text("Node B");
         ImGuiEx_BeginColumn();
+
         ed::BeginPin(nodeB_InputPinId1, ed::PinKind::Input);
         ImGui::Text("-> In1");
         ed::EndPin();
+
         ed::BeginPin(nodeB_InputPinId2, ed::PinKind::Input);
         ImGui::Text("-> In2");
         ed::EndPin();
-        ImGuiEx_NextColumn();
-        ed::BeginPin(nodeB_OutputPinId, ed::PinKind::Output);
-        ImGui::Text("Out ->");
+
+        ed::BeginPin(nodeB_InputPinId3, ed::PinKind::Input);
+        ImGui::Text("-> In3");
         ed::EndPin();
+
+        ed::BeginPin(nodeB_InputPinId4, ed::PinKind::Input);
+        ImGui::Text("-> In4");
+        ed::EndPin();
+
+//        ImGuiEx_NextColumn();
+//        ed::BeginPin(nodeB_OutputPinId, ed::PinKind::Output);
+//        ImGui::Text("Out ->");
+//        ed::EndPin();
+
         ImGuiEx_EndColumn();
+
         ed::EndNode();
+
+
+        //--
+
 
         // Submit Links
         for (auto& linkInfo : g_Links)
@@ -339,8 +395,6 @@ void ofApp::draw(){
                         // Draw new link.
                         ed::Link(g_Links.back().Id, g_Links.back().InputId, g_Links.back().OutputId);
 
-//
-//
 //                        cout<<"inputPinId:"<<ofToString(inputPinId)<<endl;
 //                        cout<<"outputPinId:"<<ofToString(outputPinId)<<endl;
                     }
@@ -403,7 +457,21 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    if (key == ' '){
+//        // Submit Links
+        for (auto& linkInfo : g_Links){
+            auto i = linkInfo.InputId;
+//            auto ii = i.;
 
+//            ed::Link(linkInfo.Id, linkInfo.InputId, linkInfo.OutputId);
+
+//            cout<<"linkInfo.Id:"<<ofToString(linkInfo.Id)<<endl;
+//            cout<<"linkInfo.InputId:"<<ofToString(linkInfo.InputId)<<endl;
+//            cout<<"linkInfo.OutputId:"<<ofToString(linkInfo.OutputId)<<endl;
+            cout << endl;
+//
+        }
+    }
 }
 
 //--------------------------------------------------------------
