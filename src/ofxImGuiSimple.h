@@ -8,6 +8,9 @@
 #ifndef ofxImGuiSimple_h
 #define ofxImGuiSimple_h
 
+#include "ofMain.h"
+#include "Helpers.h"
+
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
@@ -40,6 +43,6 @@ namespace ofxImGui {
 		//bool mousePressed[5] = { false };
 		ImGuiContext* context;
 	};
-}
+}//namespace ofxImGui
 
 #endif /* ofxImGuiSimple_h */

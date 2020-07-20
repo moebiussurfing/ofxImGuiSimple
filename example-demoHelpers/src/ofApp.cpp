@@ -1,8 +1,5 @@
 #include "ofApp.h"
 
-//#include "imgui.h"
-//#include "Helpers.h"
-
 //--------------------------------------------------------------
 void ofApp::setup() {
 	ofSetFrameRate(60);
@@ -38,7 +35,7 @@ void ofApp::draw() {
 		}
 
 		//ofxImGui::AddParameter(fill);
-		//ofxImGui::AddParameter(numShapes);
+		ofxImGui::AddParameter(numShapes);
 		//ofxImGui::AddGroup(params);
 
 		ImGui::Text("Hello, world!");
