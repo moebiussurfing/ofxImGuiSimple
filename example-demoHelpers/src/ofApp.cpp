@@ -1,6 +1,7 @@
 #include "ofApp.h"
-#include "imgui.h"
-#include "Helpers.h"
+
+//#include "imgui.h"
+//#include "Helpers.h"
 
 //--------------------------------------------------------------
 void ofApp::setup() {
@@ -27,14 +28,29 @@ void ofApp::draw() {
 
 	gui.begin();
 	{
-		auto mainSettings = ofxImGui::Settings();
-		mainSettings.windowPos = pos;
-		ImGui::SetNextWindowPos(ofVec2f(pos.x, pos.y));
+		//test
 
-		ofxImGui::AddParameter(fill);
-		ofxImGui::AddParameter(numShapes);
+		ofParameter<int> parameter = numShapes;
+		auto tmpRef = parameter.get();
+		if (ImGui::Checkbox("pName", (bool*)& tmpRef))
+		{
+			parameter.set(tmpRef);
+		}
 
-		ofxImGui::AddGroup(params, mainSettings);
+		//ofxImGui::AddParameter(fill);
+		//ofxImGui::AddParameter(numShapes);
+		//ofxImGui::AddGroup(params);
+
+		ImGui::Text("Hello, world!");
+		ImGui::SliderFloat("Float", &floatValue, 0.0f, 1.0f);
+		if (ImGui::Checkbox("Demo Window", &b))
+		{
+		}
+		if (b) ImGui::ShowDemoWindow();
+
+		//if (ImGui::Checkbox("Demo Window", &b))
+		//{
+		//}
 	}
 	gui.end();
 }
@@ -46,7 +62,7 @@ void ofApp::exit() {
 }
 	
 //ImGui::ShowDemoWindow();
-
+//
 //string _name = "name";
 //bool _collapse = true;
 //if (ofxImGui::BeginWindow(_name, mainSettings, _collapse))

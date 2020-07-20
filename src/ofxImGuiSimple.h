@@ -16,20 +16,30 @@
 
 class ofAppBaseWindow;
 
-class ofxImGuiSimple {
-public:
-    ofxImGuiSimple(){};
-    ~ofxImGuiSimple(){};
-    
-    void setup(ofAppBaseWindow* win = nullptr);
-    
-    void begin();
-    void end();
-    
-    void draw(){};
-    
-private:
-    bool isProgramableRenderer;
-};
+//TODO:
+namespace ofxImGui {
+
+	class ofxImGuiSimple {
+	public:
+		ofxImGuiSimple() {};
+		~ofxImGuiSimple() {};
+
+		void setup(ofAppBaseWindow* win = nullptr);
+
+		void begin();
+		void end();
+
+		void draw() {};
+
+	private:
+		bool isProgramableRenderer;
+
+
+		//TODO:
+		//void exit(ofEventArgs& args);
+		//bool mousePressed[5] = { false };
+		ImGuiContext* context;
+	};
+}
 
 #endif /* ofxImGuiSimple_h */

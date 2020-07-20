@@ -1,7 +1,10 @@
 #pragma once
 
 #include "ofMain.h"
+
 #include "ofxImGuiSimple.h"
+#include "Helpers.h"
+#include "imgui.h"
 
 class ofApp : public ofBaseApp {
 
@@ -10,7 +13,7 @@ public:
 	void draw();
 	void exit();
 
-	ofxImGuiSimple gui;
+	ofxImGui::ofxImGuiSimple gui;
 
 	ofParameterGroup params;
 	ofParameterGroup paramsNested;
@@ -21,4 +24,10 @@ public:
 	ofParameter<int> numShapes;
 	ofParameter<int> separation;
 	ofParameter<int> shapeSide;
+
+	float floatValue;
+
+	bool b;
+
+
 };
