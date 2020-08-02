@@ -8,6 +8,9 @@
 #ifndef ofxImGuiSimple_h
 #define ofxImGuiSimple_h
 
+#include "ofMain.h"
+#include "Helpers.h"
+
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
@@ -16,20 +19,30 @@
 
 class ofAppBaseWindow;
 
-class ofxImGuiSimple {
-public:
-    ofxImGuiSimple(){};
-    ~ofxImGuiSimple(){};
-    
-    void setup(ofAppBaseWindow* win = nullptr);
-    
-    void begin();
-    void end();
-    
-    void draw(){};
-    
-private:
-    bool isProgramableRenderer;
-};
+//TODO:
+namespace ofxImGui {
+
+	class ofxImGuiSimple {
+	public:
+		ofxImGuiSimple() {};
+		~ofxImGuiSimple() {};
+
+		void setup(ofAppBaseWindow* win = nullptr);
+
+		void begin();
+		void end();
+
+		void draw() {};
+
+	private:
+		bool isProgramableRenderer;
+
+
+		//TODO:
+		//void exit(ofEventArgs& args);
+		//bool mousePressed[5] = { false };
+		ImGuiContext* context;
+	};
+}//namespace ofxImGui
 
 #endif /* ofxImGuiSimple_h */
