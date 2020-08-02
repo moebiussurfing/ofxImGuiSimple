@@ -63,3 +63,28 @@ example-demo4/example-demo4.xcodeproj/xcshareddata/xcschemes/example-demo4 Relea
 example-demo4/openFrameworks-Info.plist
 example-demo4/Project.xcconfig
 example-demo2/example-demo2.xcodeproj/xcuserdata/manumolina.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+example-patcherNodes/Project.xcconfig
+example-patcherNodes/openFrameworks-Info.plist
+example-patcherNodes/Makefile
+example-patcherNodes/example-patcherNodes.xcodeproj/xcshareddata/xcschemes/example-patcherNodes Release.xcscheme
+example-patcherNodes/example-patcherNodes.xcodeproj/xcshareddata/xcschemes/example-patcherNodes Debug.xcscheme
+example-patcherNodes/example-patcherNodes.xcodeproj/project.xcworkspace/xcuserdata/manumolina.xcuserdatad/UserInterfaceState.xcuserstate
+example-patcherNodes/example-patcherNodes.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+example-patcherNodes/example-patcherNodes.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+example-patcherNodes/example-patcherNodes.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+example-patcherNodes/example-patcherNodes.xcodeproj/project.pbxproj
+example-patcherNodes/config.make
+example-patcherNodes/bin/example-patcherNodesDebug.app/Contents/Resources/imgui.ini
+example-patcherNodes/bin/example-patcherNodesDebug.app/Contents/Resources/icon-debug.icns
+example-patcherNodes/bin/example-patcherNodesDebug.app/Contents/PkgInfo
+example-patcherNodes/bin/example-patcherNodesDebug.app/Contents/Info.plist
+example-patcherNodes/bin/example-patcherNodesDebug.app/Contents/Frameworks/libfmodex.dylib
+example-patcherNodes/bin/example-patcherNodes.app/Contents/Resources/imgui.ini
+example-patcherNodes/bin/example-patcherNodes.app/Contents/Resources/icon.icns
+example-patcherNodes/bin/example-patcherNodes.app/Contents/PkgInfo
+example-patcherNodes/bin/example-patcherNodes.app/Contents/MacOS/example-patcherNodes
+example-patcherNodes/bin/example-patcherNodes.app/Contents/Info.plist
+example-patcherNodes/bin/example-patcherNodes.app/Contents/Frameworks/libfmodex.dylib
+example-demo5/bin/example-demo5Debug.app/Contents/Resources/NodeEditor.json
+example-patcherNodes/.DS_Store
+example-patcherNodes/bin/data/.gitkeep
